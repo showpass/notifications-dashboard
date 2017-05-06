@@ -10,7 +10,7 @@ services:
     environment:
       - NODE_ENV=production
       - USER1=showpass
-      - USER1_PASSWORD=password
+      - USER1_PASSWORD=showpass
       - PARSE_DASHBOARD_APP_ID=showpass
       - PARSE_DASHBOARD_APP_NAME=showpass
       - PARSE_DASHBOARD_MASTER_KEY=showpass_master

@@ -32,20 +32,27 @@ To run, you will need to install the project's [NPM](https://www.npmjs.com/) dep
 npm install
 ```
 
+### Configure environment
+
+Configure your environment variables, using the default config file as needed.
+
+```
+cp default.env .env
+nano .env
+```
+
+### Build server
+
+```
+npm run build
+```
+
 ### Run server
 
 To start the server, simply run the NPM script.
 
 ```
-npm start
-```
-
-### Testing
-
-To run all tests, use the NPM script.
-
-```
-npm test
+npm run start
 ```
 
 ## Continuous Integration
