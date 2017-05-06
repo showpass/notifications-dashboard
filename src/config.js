@@ -15,3 +15,4 @@ export const PARSE_DASHBOARD_SERVER_URL = env('PARSE_DASHBOARD_SERVER_URL', 'htt
 export const PARSE_DASHBOARD_APP_ID = env('PARSE_DASHBOARD_APP_ID').required().asString();
 export const PARSE_DASHBOARD_APP_NAME = env('PARSE_DASHBOARD_APP_NAME').required().asString();
 export const PARSE_DASHBOARD_MASTER_KEY = env('PARSE_DASHBOARD_MASTER_KEY').required().asString();
+export const PARSE_DASHBOARD_PATH = env('PARSE_DASHBOARD_PATH', '/parse/dashboard').required().asString();
