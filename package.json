@@ -1,6 +1,6 @@
 {
   "name": "notifications-dashboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse server for Showpass",
   "scripts": {
     "start": "node server.js",
