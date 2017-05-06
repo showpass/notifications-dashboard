@@ -1,0 +1,33 @@
+{
+  "name": "notifications-dashboard",
+  "version": "1.0.0",
+  "description": "Parse server for Showpass",
+  "scripts": {
+    "start": "node server.js",
+    "build": "gulp build",
+    "lint": "npm run lint:src && npm run lint:test",
+    "lint:src": "eslint src",
+    "lint:test": "eslint test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/showpass/notifications-dashboard.git"
+  },
+  "author": "Showpass",
+  "license": "ISC",
+  "dependencies": {
+    "del": "2.2.2",
+    "dotenv": "4.0.0",
+    "env-var": "2.4.3",
+    "express": "4.15.2",
+    "parse-dashboard": "1.0.25"
+  },
+  "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-preset-es2015": "6.24.1",
+    "gulp": "3.9.1",
+    "gulp-babel": "6.1.2",
+    "gulp-sourcemaps": "2.6.0",
+    "parse-dashboard": "1.0.25"
+  }
+}

@@ -1,0 +1,28 @@
+FROM node:6-alpine
+
+RUN mkdir /app/
+WORKDIR /app/
+
+ENV PARSE_DASHBOARD_VERSION 1.0.25
+RUN npm install -g gulp
+
+COPY package.json .
+RUN npm install
+
+# Build ./dist folder
+COPY src/ src/
+COPY server.js .
+COPY gulpfile.babel.js .
+COPY .babelrc .
+RUN gulp build
+
+# Remove dev dependencies
+RUN npm prune --production
+RUN rm -r src/
+
+ENV HOST 0.0.0.0
+ENV PORT 4040
+ENV NODE_ENV production
+EXPOSE $PORT
+
+CMD ["node", "server.js"]

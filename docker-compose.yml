@@ -1,0 +1,16 @@
+version: '2'
+services:
+  app:
+    build:
+      context: .
+    image: notifications_dashboard
+    ports:
+      - "4040:4040"
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - USER1=showpass
+      - USER1_PASSWORD=password
+      - PARSE_DASHBOARD_APP_ID=showpass
+      - PARSE_DASHBOARD_APP_NAME=showpass
+      - PARSE_DASHBOARD_MASTER_KEY=showpass_master
