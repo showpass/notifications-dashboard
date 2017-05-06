@@ -3,7 +3,6 @@ FROM node:6-alpine
 RUN mkdir /app/
 WORKDIR /app/
 
-ENV PARSE_DASHBOARD_VERSION 1.0.25
 RUN npm install -g gulp
 
 COPY package.json .
